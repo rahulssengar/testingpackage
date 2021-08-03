@@ -1,0 +1,32 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories='bathsense.faqssupport'}"/>
+
+<sly data-sly-test="${(wcmmode.edit || wcmmode.design)}">
+	<p> Add values to FAQs Support component </p> </br>
+</sly>
+
+<sly data-sly-use.model="com.aem.bathsense.core.models.FAQImp">
+
+
+            <section id="faq">
+                <div class="bs-sec">
+                    <div class="container">
+                        <div class="sec-head typ-left">
+                            <h2 class="sec-title">${model.heading}</h2>
+                        </div>
+                        <div class="sec-cont">
+                            <div class="cp-accordion" >
+								<sly data-sly-test="${model.faqDetailsWithMap}">
+									<div class="acc-item"  data-sly-list.item="${model.faqDetailsWithMap}" >
+										<div class="acc-head">${item.question}</div>
+										<div class="acc-cont">
+											<p>${item.answer}</p>
+										</div>
+									</div>
+								</sly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+</sly>

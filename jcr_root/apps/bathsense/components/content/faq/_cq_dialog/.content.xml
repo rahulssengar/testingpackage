@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="FAQs Support"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem_cmp_text_v2">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <heading
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                fieldDescription="This is the Heading of FAQs Support Component"
+                fieldLabel="Heading"
+                name="./title"/>
+            <faqdetailswithmap
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                composite="{Boolean}true"
+                fieldDescription="FAQs Support Details"
+                fieldLabel="FAQs Support Details">
+                <field
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/granite/ui/components/foundation/form/fieldset"
+                    emptyText="FAQs Support Details "
+                    name="./faqdetailswithmap">
+                    <items jcr:primaryType="nt:unstructured">
+                        <question
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            emptyText="Question"
+                            fieldDescription="This is the Question of FAQs Support Component"
+                            fieldLabel="Question"
+                            name="./question"/>
+                        <answer
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                            emptyText="Answer"
+                            fieldDescription="This is the Answer of FAQs Support Component"
+                            fieldLabel="Answer"
+                            name="./answer"/>
+                    </items>
+                </field>
+            </faqdetailswithmap>
+        </items>
+    </content>
+</jcr:root>
