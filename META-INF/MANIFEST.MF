@@ -1,5 +1,6 @@
 Manifest-Version: 1.0
-Content-Package-Roots: /apps/bathsense/components/content/faq
+Content-Package-Roots: /apps/bathsense/components/content/faq,/apps/ba
+ thsense/clientlibs/faq
 Content-Package-Type: application
-Content-Package-Id: bathsense:FAQSSUPPORT:1.0.0
+Content-Package-Id: my_packages:faq_component_pkg:1.0.0
 

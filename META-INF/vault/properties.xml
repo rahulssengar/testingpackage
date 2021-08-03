@@ -3,17 +3,17 @@
 <properties>
 <comment>FileVault Package Properties</comment>
 <entry key="createdBy">admin</entry>
-<entry key="name">FAQSSUPPORT</entry>
-<entry key="lastModified">2021-07-30T18:38:55.326+05:30</entry>
+<entry key="name">faq_component_pkg</entry>
+<entry key="lastModified">2021-08-02T22:07:21.989+05:30</entry>
 <entry key="lastModifiedBy">admin</entry>
-<entry key="created">2021-07-30T18:38:55.363+05:30</entry>
-<entry key="buildCount">1</entry>
+<entry key="created">2021-08-02T22:07:22.004+05:30</entry>
+<entry key="buildCount">2</entry>
 <entry key="version">1.0.0</entry>
 <entry key="packageType">application</entry>
 <entry key="dependencies"/>
 <entry key="packageFormatVersion">2</entry>
 <entry key="description"/>
-<entry key="lastWrapped">2021-07-30T18:38:55.326+05:30</entry>
-<entry key="group">bathsense</entry>
+<entry key="lastWrapped">2021-08-02T22:07:21.989+05:30</entry>
+<entry key="group">my_packages</entry>
 <entry key="lastWrappedBy">admin</entry>
 </properties>
